@@ -1,6 +1,6 @@
 package com.example.introkotlin_901.temasKotlin
 
-fun saludo() {
+fun men() {
     println("Calculadora de Áreas de Figuras")
 }
 
@@ -21,7 +21,7 @@ fun areaPentagono(lado: Double, apotema: Double): Double {
 }
 
 fun main() {
-    saludo()
+    men()
     println("------------------------------------------------------------")
 
     println("Área del triángulo: ${areaTriangulo(10.0, 5.0)}")
