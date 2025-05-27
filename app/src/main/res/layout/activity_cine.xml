@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="-164dp"
+    android:layout_marginStart="-11dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="433dp"
+        android:layout_height="441dp"
+        app:srcCompat="@drawable/logo_cine"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="-177dp" />
+
+    <TextView
+        android:id="@+id/tView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="143dp"/>
+
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Ingrese nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de compradores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNombre"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edCompradores"
+        android:layout_width="110dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="56dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tView2"
+        app:layout_constraintTop_toTopOf="@+id/tView2"/>
+
+    <TextView
+        android:id="@+id/tView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarjeta cineco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tView2"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/tView3"
+        app:layout_constraintTop_toTopOf="@+id/tView3">
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sí"/>
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de boletos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edBoletos"
+        android:layout_width="110dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tView4"
+        app:layout_constraintTop_toTopOf="@+id/tView4"/>
+
+    <TextView
+        android:id="@+id/tBoletosAPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boletos a pagar:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tView4"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tBoletosAPagar"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tResultado"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
